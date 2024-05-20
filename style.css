@@ -1,0 +1,282 @@
+/* Resetting default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body.home {
+  font-family: Arial, sans-serif;
+  background-color: rgb(0, 0, 0); /* Background color set to yellow */
+  color: rgb(255, 208, 0); /* Text color set to black */
+}
+
+body.other {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: rgb(0, 0, 0); /* Background color set to yellow */
+  color: rgb(0, 0, 0); /* Text color set to black */
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body.team {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: rgb(0, 0, 0); /* Background color set to yellow */
+  color: rgb(0, 0, 0); /* Text color set to black */
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+}
+
+header {
+  background-color: rgb(0, 0, 0); /* Header background color set to black */
+  color: rgb(255, 208, 0); /* Header text color set to yellow */
+  padding: 20px;
+  height: 120px; /* Adjust the height as needed */
+  text-align: left; /* Center align the content */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 18px; /* Increase the font size for navigation links */
+  font-weight: bold;
+  /*display: flex;
+  align-items: center;
+  justify-content: space-between;*/
+}
+
+.header-content {
+  overflow: hidden; /* Clear the floats */
+}
+
+header .logo-container h1 {
+  text-align: left; /* Align the h1 elements to the left */
+}
+
+h1 {
+  margin-top: 8px; /* Adjust the margin-top value to move the heading text lower */
+  text-align: center; /* Align the h1 elements to the left */
+  margin-bottom: 100px;
+  color: rgb(255, 208, 0);
+}
+
+ul{
+  padding-left: 40px; /* Adjust the left padding to create indentation */
+  list-style-type: none;
+}
+ul li {
+  padding-bottom: 5px;
+}
+
+ul li:first-child {
+  padding-top: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  line-height: 120px; /* Adjust this value to match the height of your header */
+}
+
+nav {
+  float: right; /* Float the navigation to the right */
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 40px;
+}
+
+nav ul li a {
+  color: rgb(255, 208, 0); /* Navigation links color set to yellow */
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.logo {
+  height: 130px; /* Adjust the height according to your logo */
+  width: auto; /* Allows the width to adjust proportionally with the height */
+  margin-right: 10px; /* Adds some space between the logo and the header text */
+  margin-top: 0px; /* Adjust the margin-top value to move the logo higher */
+}
+
+.logo-container {
+  float: left; /* Float the logo container to the left */
+}
+
+.big-picture {
+  text-align: center; /* Center-align the image */
+  margin-bottom: 20px; /* Add some space below the image */
+}
+
+.menu-picture {
+  text-align: left; /* Center-align the image */
+  margin-bottom: 20px; /* Add some space below the image */
+}
+
+.image-container {
+  position: relative;
+  flex: 1; /* Allow the image container to grow to fill available space */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  /*max-width: 100%; /* Ensure the image doesn't exceed its container */
+  /*position: relative;
+  display: inline-block;*/
+  margin: 20px;
+}
+
+.image-container img {
+  max-width: 48vw; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Add rounded corners */
+  background-size: cover;
+  transition: background-image 0.3s ease-in-out; /* Smooth transition */
+}
+
+
+
+.big-image-container img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the competition sections */
+.menu-section {
+  display: flex;
+  margin-bottom: 20px; /* Adjust spacing between sections */
+}
+
+/* Style for the text container */
+.text-container {
+  flex: 1; /* Allow the text container to grow to fill available space */
+  padding: 20px; /* Add padding to create space around the text */
+  background-color: rgb(255, 208, 0); /* Add yellow background color */
+  border-radius: 5px; /* Add rounded corners */
+  margin: 20px;
+}
+
+.image-container .overlay {
+  position: absolute;
+  top: 0; /* Align the overlay to the top of the container */
+  right: 0; /* Align the overlay to the right of the container */
+  bottom: 0; /* Align the overlay to the bottom of the container */
+  left: 0; /* Align the overlay to the left of the container */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.comps-image-container:hover img {
+  /*display: none; /* Hide the image when the container is hovered over */
+  opacity: 0; /* Change the opacity to 0 when the container is hovered over */
+  transition: opacity 0.5s ease; /* Add transition for smooth effect */
+}
+
+.image-container:hover .overlay {
+  display: flex; /* Show overlay on hover */
+}
+
+.overlay p {
+  color: rgb(255, 208, 0);
+  text-align: center;
+  padding: 10px; /* Add padding for better readability */
+  margin: 0; /* Remove margin */
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 30px; /* Increase the font size for navigation links */
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 208, 0);
+}
+
+.overlay p:hover {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 255, 255);
+}
+
+}
+.member {
+    margin-bottom: 40px;
+}
+.member img {
+    max-width: 200px;
+    border-radius: 5%;
+    margin-bottom: 10px;
+}
+.member h3 {
+    margin-top: 0;
+}
+
+.member h4 {
+  margin-top: 0;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.group .member {
+    width: calc(20% - 10px); /* Adjust width for each member in the group */
+    background-color: rgb(255, 208, 0);
+    border-radius: 5%;
+    margin-left:8%;
+    margin-right:8%;
+  }
+
+/* Custom styles */
+#president {
+margin-top: 0px; /* Move president section slightly higher */
+margin-bottom: auto; /* Push president section to the top */
+}
+
+#jdg {
+  background-image: url('Images/jdg-delegation-2024-hype.jpg');
+  max-width: 48vw; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Add rounded corners */
+  background-size: cover;
+}
+
+#cqi {
+  background-image: url('Images/cqi-delegation-2024-hype.jpg');
+  max-width: 48vw; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Add rounded corners */
+  background-size: cover;
+}
+
+#cec {
+  background-image: url('Images/cec-delegation-2024-hype.jpg');
+  max-width: 48vw; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Add rounded corners */
+  background-size: cover;
+}
+
+footer {
+  background-color: black; /* Footer background color set to black */
+  color: rgb(255, 208, 0); /* Footer text color set to yellow */
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
