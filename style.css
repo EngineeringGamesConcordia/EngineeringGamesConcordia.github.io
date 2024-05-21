@@ -67,7 +67,7 @@ h1 {
   font-size: 40px;
 }
 
-ul{
+ul {
   padding-left: 40px; /* Adjust the left padding to create indentation */
   list-style-type: none;
 }
@@ -172,7 +172,6 @@ main {
   background-color: rgb(255, 208, 0); /* Add yellow background color */
   border-radius: 5px; /* Add rounded corners */
   justify-content: center;
-  max-width: ;
 }
 
 .image-container .overlay {
@@ -219,18 +218,16 @@ main {
   text-decoration: underline;
   text-decoration-color: rgb(255, 255, 255);
 }
-
-}
 .member {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .member img {
-    max-width: 200px;
-    border-radius: 5%;
-    margin-bottom: 10px;
+  max-width: 200px;
+  border-radius: 5%;
+  margin-bottom: 10px;
 }
 .member h3 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .member h4 {
@@ -238,32 +235,32 @@ main {
 }
 
 .group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
 }
 .group .member {
-    width: calc(20% - 10px); /* Adjust width for each member in the group */
-    background-color: rgb(255, 208, 0);
-    border-radius: 5%;
-    margin-left:8%;
-    margin-right:8%;
-  }
+  width: calc(20% - 10px); /* Adjust width for each member in the group */
+  background-color: rgb(255, 208, 0);
+  border-radius: 5%;
+  margin-left: 8%;
+  margin-right: 8%;
+}
 
 /* Custom styles */
 #president {
-margin-top: 0px; /* Move president section slightly higher */
-margin-bottom: auto; /* Push president section to the top */
+  margin-top: 0px; /* Move president section slightly higher */
+  margin-bottom: auto; /* Push president section to the top */
 }
 
 #jdg {
-  background-image: url('Images/jdg-delegation-2024-hype.jpg');
+  background-image: url("Images/jdg-delegation-2024-hype.jpg");
   border-radius: 5px; /* Add rounded corners */
   background-size: cover;
 }
 
 #cqi {
-  background-image: url('Images/cqi-delegation-2024-hype.jpg');
+  background-image: url("Images/cqi-delegation-2024-hype.jpg");
   max-width: 48vw; /* Make the image responsive */
   height: auto; /* Maintain aspect ratio */
   border-radius: 5px; /* Add rounded corners */
@@ -271,7 +268,7 @@ margin-bottom: auto; /* Push president section to the top */
 }
 
 #cec {
-  background-image: url('Images/cec-delegation-2024-hype.jpg');
+  background-image: url("Images/cec-delegation-2024-hype.jpg");
   max-width: 48vw; /* Make the image responsive */
   height: auto; /* Maintain aspect ratio */
   border-radius: 5px; /* Add rounded corners */
