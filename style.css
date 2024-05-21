@@ -21,7 +21,7 @@ body.other {
     "Lucida Sans", Arial, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background-color: rgb(0, 0, 0); /* Background color set to yellow */
   color: rgb(0, 0, 0); /* Text color set to black */
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
 }
@@ -63,8 +63,8 @@ header .logo-container h1 {
 h1 {
   margin-top: 8px; /* Adjust the margin-top value to move the heading text lower */
   text-align: center; /* Align the h1 elements to the left */
-  margin-bottom: 100px;
   color: rgb(255, 208, 0);
+  font-size: 40px;
 }
 
 ul{
@@ -128,23 +128,21 @@ main {
   position: relative;
   flex: 1; /* Allow the image container to grow to fill available space */
   display: flex;
-  justify-content: center; /* Center the image horizontally */
+  justify-content: space-evenly; /* Center the image horizontally */
   align-items: center; /* Center the image vertically */
   /*max-width: 100%; /* Ensure the image doesn't exceed its container */
   /*position: relative;
   display: inline-block;*/
+  max-width: 48vw; /* Make the image responsive */
   margin: 20px;
 }
 
 .image-container img {
-  max-width: 48vw; /* Make the image responsive */
+  max-width: 100%;
   height: auto; /* Maintain aspect ratio */
   border-radius: 5px; /* Add rounded corners */
-  background-size: cover;
   transition: background-image 0.3s ease-in-out; /* Smooth transition */
 }
-
-
 
 .big-image-container img {
   max-width: 100%; /* Make the image responsive */
@@ -164,6 +162,17 @@ main {
   background-color: rgb(255, 208, 0); /* Add yellow background color */
   border-radius: 5px; /* Add rounded corners */
   margin: 20px;
+  position: relative;
+  max-width: 48vw;
+}
+
+.project-text-container {
+  flex: 1; /* Allow the text container to grow to fill available space */
+  padding: 20px; /* Add padding to create space around the text */
+  background-color: rgb(255, 208, 0); /* Add yellow background color */
+  border-radius: 5px; /* Add rounded corners */
+  justify-content: center;
+  max-width: ;
 }
 
 .image-container .overlay {
@@ -231,7 +240,7 @@ main {
 .group {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-top: 60px;
 }
 .group .member {
     width: calc(20% - 10px); /* Adjust width for each member in the group */
@@ -249,8 +258,6 @@ margin-bottom: auto; /* Push president section to the top */
 
 #jdg {
   background-image: url('Images/jdg-delegation-2024-hype.jpg');
-  max-width: 48vw; /* Make the image responsive */
-  height: auto; /* Maintain aspect ratio */
   border-radius: 5px; /* Add rounded corners */
   background-size: cover;
 }
