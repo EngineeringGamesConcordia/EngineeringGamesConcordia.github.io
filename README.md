@@ -2,7 +2,7 @@
 ## Description
 This repository contains the files required to maintain the unofficial website for the EngGames as the official website is not directly maintained by the ECA executives.
 
-The ECA-maintained website can be accessed through: https://engineeringgamesconcordia.github.io/
+The ECA-maintained website can be accessed [here](https://engineeringgamesconcordia.github.io).
 
 ## Coding Conventions
 All of the coding conventions applied to this project can be found on the W3Schools website:
